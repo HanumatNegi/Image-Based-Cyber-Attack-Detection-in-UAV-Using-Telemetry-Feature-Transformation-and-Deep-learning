@@ -1,0 +1,52 @@
+{
+  "dataset": "UAVAttack",
+  "pipeline_order": [
+    "split",
+    "scale",
+    "pca",
+    "smote",
+    "image_convert"
+  ],
+  "leakage_free": true,
+  "label_mapping": {
+    "benign": 0,
+    "gps_jamming": 1,
+    "gps_spoofing": 2
+  },
+  "n_features_input": 51,
+  "n_pca_components": 32,
+  "pca_variance_kept": 0.9997650781015132,
+  "pca_mode": "fixed",
+  "image_size_display": [
+    64,
+    64
+  ],
+  "grid_shape": [
+    5,
+    4
+  ],
+  "channels": 3,
+  "class_weights": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0
+  },
+  "augmentation": {
+    "horizontal_flip": true,
+    "vertical_flip": false,
+    "rotation_range": 0,
+    "zoom_range": 0,
+    "width_shift_range": 0,
+    "height_shift_range": 0
+  },
+  "splits": {
+    "train": 17025,
+    "val": 1511,
+    "test": 1511
+  },
+  "class_counts_train_after_smote": {
+    "benign": 5675,
+    "gps_jamming": 5675,
+    "gps_spoofing": 5675
+  }
+}

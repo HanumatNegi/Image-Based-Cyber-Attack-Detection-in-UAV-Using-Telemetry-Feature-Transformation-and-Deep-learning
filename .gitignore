@@ -1,0 +1,4 @@
+
+# Large trained models stored on Google Drive
+UAVATTACK/model_output_vgg/*.pth
+UAVNIDS/model_output_vgg/*.pth

@@ -1,0 +1,58 @@
+{
+  "dataset": "UAVNIDS-2025",
+  "pipeline_order": [
+    "split",
+    "scale",
+    "pca",
+    "adasyn",
+    "image_convert"
+  ],
+  "leakage_free": true,
+  "label_mapping": {
+    "Blackhole Attack": 0,
+    "Flooding Attack": 1,
+    "Normal Traffic": 2,
+    "Sybil Attack": 3,
+    "Wormhole Attack": 4
+  },
+  "n_features_input": 18,
+  "n_pca_components": 12,
+  "pca_variance_kept": 0.9999992954651415,
+  "pca_mode": "fixed",
+  "image_size_display": [
+    64,
+    64
+  ],
+  "grid_shape": [
+    2,
+    2
+  ],
+  "channels": 3,
+  "class_weights": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0
+  },
+  "augmentation": {
+    "horizontal_flip": true,
+    "vertical_flip": false,
+    "rotation_range": 0,
+    "zoom_range": 0,
+    "width_shift_range": 0,
+    "height_shift_range": 0
+  },
+  "splits": {
+    "train": 91600,
+    "val": 17096,
+    "test": 17093
+  },
+  "class_counts_train_after_adasyn": {
+    "Blackhole Attack": 18320,
+    "Flooding Attack": 18320,
+    "Normal Traffic": 18320,
+    "Sybil Attack": 18320,
+    "Wormhole Attack": 18320
+  }
+}
