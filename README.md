@@ -367,3 +367,7 @@ If you use this work, please cite the relevant dataset publications and acknowle
 
 **GitHub Repository:**  
 [Image-Based Cyber Attack Detection in UAV Using Telemetry Feature Transformation and Deep Learning](https://github.com/HanumatNegi/Image-Based-Cyber-Attack-Detection-in-UAV-Using-Telemetry-Feature-Transformation-and-Deep-learning)
+
+
+**NOTE**
+AI agent Claude was used for for resolving errors during the execution of code
